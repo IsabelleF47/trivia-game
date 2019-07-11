@@ -12,6 +12,11 @@ body {
 
  div {
     background-color:white;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border:none;
+    
 
 }
 

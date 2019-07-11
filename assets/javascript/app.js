@@ -18,32 +18,40 @@ function check() {
     var q4= document.game.q4.value;
 
     var correct=0;
-    if(q1=="thailand"){
+
+    if(q1 =="thailand") {
         correct++;
     }
-    if(q2=="shorthair"){
+    if(q2 =="shorthair") {
         correct++;
     }
-    if(q3=="cats"){
+    if(q3 =="cats") {
         correct++;
     }
-    if(q3=="pepper"){
+    if(q4 =="pepper") {
         correct++;
     }
-    document.getElementById("afterSubmit").style.visibility="visible";
-    document.getElementById("numberorrect").innerHTML="You got"+correct+"right.";
-    
+
+
+    var messages = ["Awesome!","Study your felines!","Definitely not a cat person!"];
+
+    var range;
+    if (correct<1) {
+        range=2;
+    }
+    if (correct>0 && correct<4) {
+        range=1;
+    }
+    if (correct>2){
+        range=0;
+    }
+
+    document.getElementById("doneClick").style.visibility = "visible";
+
+    document.getElementById("message").innerHTML = messages[range];
+    document.getElementById("numberCorrect").innerHTML ="You got "+ correct +" right.";
+
 }
 
 
 
-
-
-
-
-
-
-
-
-
-// this is the game timer funtion that will count down as the user guesses
