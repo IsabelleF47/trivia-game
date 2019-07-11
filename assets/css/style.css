@@ -2,9 +2,17 @@ body {
     background-image: url("../images/kat\ background\ 2.jpg");
     background-position: 50% 50%;
     background-repeat: repeat;
-   }
-   .red {
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       font-size: 50px;
-       color:red;
-   }
+}
+
+.red {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: red;
+}
+
+ div {
+    background-color:white;
+
+}
+
+

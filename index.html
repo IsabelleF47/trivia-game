@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <script src="assets/javascript/app.js"></script>
- <link rel="stylesheet" type="text/css" href="assets/css/style.css">.
+    <script src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">.
     <title>Kitty Kat Trivia</title>
 </head>
-<body>
-    <h1 class="red"> Welcome to Kitty Kat Trivia!</h1>
-    <h2 class="red"> Test your knowledge on various feline facts.</h2>
 
-    <p class="red" id="timer">Timer!:</p>
+<body>
+
+    <div id=questionBox>
+        <form id="game" name="game"></form>
+        <h1 class="red"> Welcome to Kitty Kat Trivia!</h1>
+        <h2 class="red"> Test your knowledge on various feline facts.</h2>
     
+
+        <p>What country does the Siamese cat variation originate from? </p>
+        <input type="radio" id="mc" name="q1" value="thailand">thailand <br>
+        <input type="radio" id="mc" name="q1" value="finland">finland <br>
+        <input type="radio" id="mc" name="q1" value="china">china <br>
+
+        <p>What hair type is more common in cats long hair or short hair variation?</p>
+        <input type="radio" id="mc" name="q2" value="longhair">longhair <br>
+        <input type="radio" id="mc" name="q2" value="shorthair">shorthair <br>
+
+
+        <p> What pet do households in the U.S.A. have more of, dogs or cats? </p>
+        <input type="radio" id="mc" name="q3" value="dogs">dogs <br>
+        <input type="radio" id="mc" name="q3" value="cats">cats <br>
+
+
+        <p> What was the name of my first cat? </p>
+        <input type="radio" id="mc" name="q4" value="pepper">pepper <br>
+        <input type="radio" id="mc" name="q4" value="ralph">ralph <br>
+        <input type="radio" id="mc" name="q4" value="tiger">tiger <br>
+        <input type="radio" id="mc" name="q4" value="smokey">smokey <br>
+
+
+    <input type="button" id="button" value="I am done!" onClick="check();">
+        
+
+
+</form>
+    </div>
+
+    <div id="doneClick">
+        <p id="numberCorrect"></p>
+    </div>
+
 </body>
 
 </html>
